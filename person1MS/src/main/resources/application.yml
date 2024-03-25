@@ -6,15 +6,15 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:1521/xepdb1
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    username: Mohammad
-    password: myjava123
+    username: Mohammad #your username in database
+    password: myjava123 #your password
 
   jpa:
     show-sql: true
     generate-ddl: true
     database-platform: org.hibernate.dialect.OracleDialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create-drop  #if you want to drop that table and create a new one
 
 
 eureka:
